@@ -13,7 +13,7 @@ def create_app(env_name):
     """
 
     # app initiliazation
-    app.register_blueprint(user_blueprint, url_prefix='/api/v1/users')  # add this line
+    app.register_blueprint(user_blueprint, url_prefix='/api/v1/users')
 
     @app.route('/', methods=['GET'])
     def index():
