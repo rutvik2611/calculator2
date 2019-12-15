@@ -12,7 +12,7 @@ def create_app(env_name):
     Create app
     """
 
-    # app initiliazation
+    #app initiliazation
     app.register_blueprint(user_blueprint, url_prefix='/api/v1/users')
 
     @app.route('/', methods=['GET'])
