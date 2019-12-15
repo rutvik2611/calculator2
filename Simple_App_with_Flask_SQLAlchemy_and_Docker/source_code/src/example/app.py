@@ -10,6 +10,7 @@ app = create_app()
 
 @app.route('/', methods=['GET'])
 def fetch():
+
     cats = database.get_all(Cats)
     all_cats = []
     for cat in cats:
