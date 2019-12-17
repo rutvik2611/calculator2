@@ -8,8 +8,8 @@ class Development(object):
     """
     DEBUG = True
     TESTING = False
-    JWT_SECRET_KEY = os.getenv('JWT_SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL')
+    JWT_SECRET_KEY = 'adminadminadmin'
+    SQLALCHEMY_DATABASE_URI = 'postgres://postgres:admin@localhost:5432/blog_api_db'
 
 class Production(object):
     """
